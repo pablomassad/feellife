@@ -1,0 +1,90 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+.progBar{
+   position: absolute;
+   width: 100%;
+   z-index: 100;
+}
+
+.fl_toolbar{
+    // background: linear-gradient(#ffffff59 88%, #000000);
+    background: radial-gradient(circle at 50%, #fff, #eee 70%, #ddd 85%, #bdbcbc 100%);
+    // background: white;
+    padding: 10px;
+    margin-top: -10px;
+    box-shadow: 0px 5px 30px #000000;
+}
+
+.fl_options{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.logoTipo{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.isoTipo{
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+}
+
+
+
+.toast-info {
+> div{
+        background-color:rgba(0, 98, 128, 0.74)!important;
+    }
+}
+
+
+.toast-success {
+> div{
+        background-color:green!important;
+    }
+}
+
+.toast-error {
+> div{
+        background-color:red!important;
+    }
+}
+
+
+.iconStatus{
+    color: #bbb;
+    margin-top: 10px;
+    float: right;
+    font-size: 30px;
+ }
+
+ .iconStatusON{
+    color: black;
+ }
+

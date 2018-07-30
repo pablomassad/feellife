@@ -1,0 +1,92 @@
+////////////////////////////////////////////////
+// ANGULAR CLI
+
+sudo npm install -g @angular/cli
+sudo npm install --save @angular/animations@4.1.3
+sudo npm install -g angular-cli-ghpages
+
+ng new project
+cd project
+
+//server.js -> Server.prototype.checkHost function
+node_modules/webpack-dev-server/lib/Server.js (line 425): replace -> return false to true;
+
+
+// start serving angular app
+ng serve -host 0.0.0.0 -port 8080
+
+////////////////////////////////
+// Deploy in GitHub
+** Crear APP en GitHub
+git pull
+git clone https://github........git
+git remote add origin https://github.com/ponic12/pypapp.git
+git init
+git add .
+git commit -am "make it better"
+git push origin master
+
+
+/////////////////////////////////////////////////////////
+// deploy to prod folder
+ng build --prod --output-path ~/workspace/deploy/public/
+
+cd ~/workspace/deploy
+
+
+
+
+sudo npm install -g @angular/cli
+sudo  npm install -g angular-cli-ghpages
+
+ng new project
+cd project
+
+//server.js -> Server.prototype.checkHost function
+node_modules/webpack-dev-server/lib/Server.js (line 425): replace -> return false to true;
+
+
+// start serving angular app
+ng serve -host 0.0.0.0 -port 8080
+
+
+/////////////////////////////////////////////////////////
+// deploy to prod folder
+ng build --prod --output-path ~/workspace/deploy/public/
+
+// Custom website
+ng build --prod --output-path ~/workspace/deploy/public/  --base-href /website/
+
+// GitHub Pages
+ng build --prod --output-path ~/workspace/deploy/public/  --base-href https://ponic12.github.com/pypa4/
+git remote add origin https://github.com/ponic12/pypa4.git
+sh deployGit.sh "comment"
+ngh -d public -S
+
+
+cd ~/workspace/deploy
+
+Create file Procfile with:
+web: node index.js
+
+
+// run node backend
+node server.js -host 0.0.0.0 -port 8080
+
+
+git pull
+git clone https://github........git
+git init
+git add .
+git commit -am "make it better"
+git push origin master
+
+copiar todas las carpetas dentro de myapp a myapp/public
+npm init
+npm install --save express
+npm install --save mongoose
+npm install --save body-parser
+npm install --save morgan
+
+
+

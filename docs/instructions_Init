@@ -1,0 +1,17 @@
+Crear proyecto en Firebase
+Copiar configuracion de acceso
+
+Crear proyecto en Heroku
+
+Instalar localmente nodejs latest
+Configurarlo x default
+
+Instalar Ionic
+Crear app blank
+
+Crear carpeta deploy 
+Copiar carpeta www del proyecto ionic
+
+Instalar firebase-tools
+Configurarlo con token
+Crear carpeta firebase-functions

@@ -1,0 +1,15 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic Blank
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div class="graph-container">
+        <canvas baseChart width="400" height="200" [datasets]="emotData" [options]="graphOptions" [legend]="false" [chartType]="'scatter'"></canvas>
+    </div>
+
+</ion-content>

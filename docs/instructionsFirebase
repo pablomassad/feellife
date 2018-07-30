@@ -1,0 +1,49 @@
+
+npm install -g firebase-tools
+mkdir firebase-functions
+cd firebase-functions
+firebase --version
+firebase login --no-localhost
+login by gmail.... => authorization code:
+( 4/i83gEkbippOMRq4OemlfBADyh6gRzcVxW3UUJDk2850 )
+( 4/T7GXxsq1GggRPtxj0dfKx0JJpdypFl28ZQWhlf4Kack ) 4/11/17
+
+firebase init
+cd functions
+nano .gitignore  (node_modules)
+
+editar archivo:  index.js
+firebase deploy --only functions:xxxx
+
+
+
+
+If you're upgrading @google-cloud/functions-emulator, these
+are the recommended upgrade steps:
+
+1.  Stop the currently running emulator, if any:
+
+        functions stop
+
+2.  Uninstall the current emulator, if any:
+
+        npm uninstall -g @google-cloud/functions-emulator
+
+3.  Install the new version of the emulator:
+
+        npm install -g @google-cloud/functions-emulator
+
+If you have trouble after upgrading, try deleting the config
+directory found in:
+
+    ~/.config/configstore/@google-cloud/functions-emulator
+
+Then restart the emulator. You can also check for any renegade
+Node.js emulator processes that may need to be killed:
+
+    ps aux | grep node
+
+
+////////////////////////////////////////////////
+// ANGULAR FIREBASE
+sudo npm install firebase angularfire2 --save

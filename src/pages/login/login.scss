@@ -1,0 +1,37 @@
+page-login {
+  .login_back {
+      background-image:linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('../assets/imgs/back.jpg');
+      // background: radial-gradient(#000000, rgb(108, 120, 124));
+      // background-size: 100vh 100vh;
+      background-size: cover;
+  }
+
+  .logoKM{
+      margin-top: 30px;
+  }
+
+  .backForm {
+    background: radial-gradient(circle at 50%, #fff, #eee 70%, #ddd 85%, #bdbcbc 100%);
+    //background: white;
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #000;
+  }
+
+  .loginBtn {
+    box-shadow: 2px 2px 5px #000;
+    width: 80%;
+    margin: auto;
+  }
+
+
+  .btnGoogle{
+    width: 50%;
+    background: transparent;
+  }
+
+}

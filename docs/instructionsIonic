@@ -1,0 +1,37 @@
+nvm ls-remote
+nvm install 9.0.0
+nvm use 9.0.0
+nvm alias default 9.0.0
+
+
+
+
+
+////////////////////////////////////////////////
+// IONIC
+
+sudo npm install -g ionic cordova
+npm install promise-polyfill --save-exact
+sudo npm install -g ionic@latest
+ionic info
+ionic start myApp blank
+ionic serve -p $PORT -r 8081
+ionic serve -p $PORT -r 8081 -l // lab mode 
+
+ionic ssh setup
+
+ionic g page pageName 
+-- modificar ngmodule.ts para agregar referencia
+
+git push ionic master
+
+
+ionic resources
+ionic cordova platform add android
+ionic cordova run android
+
+
+
+
+npm run build --prod
+

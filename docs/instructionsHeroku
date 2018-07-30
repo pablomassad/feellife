@@ -1,0 +1,26 @@
+///////////
+// Heroku
+///////////
+wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+
+heroku login
+heroku git:remote -a pypNNN
+
+heroku run bash   (consola remota)
+heroku ps:scale
+heroku ps:stop run.1
+
+git init
+git add .
+git commit -am "make it better"
+git push heroku master
+
+heroku create pypNNN
+heroku ps
+heroku open
+heroku logs
+
+
+// Ver user y password in mlab mongodb
+heroku config | grep MONGODB_URI
+
