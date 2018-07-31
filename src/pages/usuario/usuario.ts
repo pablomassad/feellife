@@ -51,7 +51,6 @@ export class UsuarioPage implements OnInit {
       this.photoPath = (this.user.photoURL)?this.user.photoURL:"assets/imgs/person.png"
 
       const plataforma = this.globalSrv.getVar('plataforma')
-      const env = this.globalSrv.getVar('environment')
       if (plataforma == "mobile") {
          this.oneSignal.setLogLevel({ logLevel: 1, visualLevel: 1 })
          const firebaseConfig = ENVIRONMENTS.firebase   
