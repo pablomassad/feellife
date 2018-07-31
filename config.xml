@@ -121,4 +121,5 @@
     <plugin name="cordova-plugin-zip" spec="^3.1.0" />
     <plugin name="cordova-plugin-code-push" spec="^1.11.11" />
     <engine name="android" spec="6.4.0" />
+    <plugin name="onesignal-cordova-plugin" spec="^2.4.1" />
 </widget>

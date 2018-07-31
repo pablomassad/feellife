@@ -27,6 +27,7 @@
     "@ionic-native/code-push": "^4.11.0",
     "@ionic-native/core": "4.7.0",
     "@ionic-native/network": "^4.10.0",
+    "@ionic-native/onesignal": "^4.11.0",
     "@ionic-native/social-sharing": "4.7.0",
     "@ionic-native/splash-screen": "4.7.0",
     "@ionic-native/status-bar": "4.7.0",
@@ -66,6 +67,7 @@
     "lodash": "^4.17.10",
     "moment": "^2.22.2",
     "ng2-charts": "^1.6.0",
+    "onesignal-cordova-plugin": "^2.4.1",
     "rxjs": "^5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "^0.8.26"
@@ -93,7 +95,8 @@
       "cordova-plugin-zip": {},
       "cordova-plugin-appcenter-push": {},
       "cordova-plugin-appcenter-crashes": {},
-      "cordova-plugin-appcenter-analytics": {}
+      "cordova-plugin-appcenter-analytics": {},
+      "onesignal-cordova-plugin": {}
     },
     "platforms": [
       "android"

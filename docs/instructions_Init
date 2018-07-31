@@ -1,17 +1,22 @@
 Crear proyecto en Firebase
 Copiar configuracion de acceso
 
-Crear proyecto en Heroku
+Instalar sudo npm install -g ionic cordova
+Instalar sudo npm install -g firebase-tools
+Instalar sudo npm install -g code-push-cli
 
-Instalar localmente nodejs latest
-Configurarlo x default
 
-Instalar Ionic
-Crear app blank
+ionic cordova platform add 
+ionic resources
+ionic cordova run android
+ionic serve
 
-Crear carpeta deploy 
-Copiar carpeta www del proyecto ionic
+ionic cordova plugin add onesignal-cordova-plugin
+npm install --save @ionic-native/onesignal
 
-Instalar firebase-tools
-Configurarlo con token
-Crear carpeta firebase-functions
+Login en OneSignal con github
+Crear proyecto
+Copiar codigo onesignal en home.tools
+
+
+

@@ -1,16 +1,17 @@
-import { Component, OnInit, NgZone } from '@angular/core';
-import { NavController, NavParams, ModalController } from 'ionic-angular';
-import { Platform, IonicPage, ActionSheetController } from 'ionic-angular';
+import { Component, OnInit, NgZone } from '@angular/core'
+import { NavController, NavParams, ModalController } from 'ionic-angular'
+import { Platform, IonicPage, ActionSheetController } from 'ionic-angular'
+import { OneSignal } from '@ionic-native/onesignal'
+import { ENVIRONMENTS } from '../../environments'
 
-import { Emotion } from '../../shared/interfaces/emotion';
+import { Emotion } from '../../shared/interfaces/emotion'
 
-import { AuthService } from 'fwk-auth';
-import { ApplicationService, GlobalService } from 'fwk-services';
-import { FirebaseService } from '../../shared/services/firebase.service';
-import { PushingService } from '../../shared/services/pushing.service';
+import { AuthService } from 'fwk-auth'
+import { ApplicationService, GlobalService } from 'fwk-services'
+import { FirebaseService } from '../../shared/services/firebase.service'
 
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/map';
+import { Observable } from 'rxjs/Observable'
+import 'rxjs/add/operator/map'
 
 
 @IonicPage()
@@ -27,12 +28,12 @@ export class UsuarioPage implements OnInit {
    totals: any = {}
 
    constructor(
+      private oneSignal: OneSignal,
       private authSrv: AuthService,
       private actionCtrl: ActionSheetController,
       private navCtrl: NavController,
       private navParams: NavParams,
       private appSrv: ApplicationService,
-      private pushSrv: PushingService,
       private globalSrv: GlobalService,
       private fs: FirebaseService
    ) {
@@ -48,7 +49,31 @@ export class UsuarioPage implements OnInit {
       this.user = this.navParams.get('usr')
       this.appSrv.message('Bienvenido: ' + this.user.displayName)
       this.photoPath = (this.user.photoURL)?this.user.photoURL:"assets/imgs/person.png"
-      this.pushSrv.initFCM(this.user.uid)
+
+      const plataforma = this.globalSrv.getVar('plataforma')
+      const env = this.globalSrv.getVar('environment')
+      if (plataforma == "mobile") {
+         this.oneSignal.setLogLevel({ logLevel: 1, visualLevel: 1 })
+         const firebaseConfig = ENVIRONMENTS.firebase   
+         const oneSignalId = ENVIRONMENTS.oneSignalId
+         //this.oneSignal.startInit('994ca981-ece6-48b8-bc11-154ec73066db', '966739792993')
+         this.oneSignal.startInit(oneSignalId, firebaseConfig.messagingSenderId)
+
+         this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.None)
+         //this.oneSignal.inFocusDisplaying(this.oneSignal.OSInFocusDisplayOption.InAppAlert)
+
+         this.oneSignal.handleNotificationReceived().subscribe((x) => {
+            this.appSrv.basicAlert(JSON.stringify(x))
+         })
+         this.oneSignal.handleNotificationOpened().subscribe((x) => {
+            this.appSrv.basicAlert(JSON.stringify(x))
+         })
+         this.oneSignal.endInit();
+         this.oneSignal.sendTag('legajo', this.user.legajo)
+         this.oneSignal.getIds().then(x => { //x.userId: id de app cliente  -  x.pushToken: random chars
+            console.log(JSON.stringify(x))
+         })
+      }  
    }
 
    ngOnInit() {
