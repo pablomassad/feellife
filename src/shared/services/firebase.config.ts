@@ -1,9 +1,9 @@
 export const FIREBASE_CONFIG ={
-   apiKey: "AIzaSyC9Zh0FNlSD_BqnRCvnoWXMc91fzzAYd0c",
-   authDomain: "emotionsdb-f832f.firebaseapp.com",
-   databaseURL: "https://emotionsdb-f832f.firebaseio.com",
-   projectId: "emotionsdb-f832f",
-   storageBucket: "emotionsdb-f832f.appspot.com",
-   messagingSenderId: "779781116669" 
+   apiKey: "AIzaSyCizYbjCyp0eBsPpDUeuhHxm8k_d65E7mY",
+   authDomain: "pp-feellife.firebaseapp.com",
+   databaseURL: "https://pp-feellife.firebaseio.com",
+   projectId: "pp-feellife",
+   storageBucket: "",
+   messagingSenderId: "127935454909"
 };
 

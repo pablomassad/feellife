@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.pp.emotions" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.pp.feellife" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <platform name="android">
-        <preference name="CodePushDeploymentKey" value="msKo_QkqSvNIixMbvpQqdcW2COP436782d21-3e82-4316-9366-3e8515e3da2b" />
+        <preference name="CodePushDeploymentKey" value="Af6HzEw-qk5SrWeDMDSf_c0C5mzs3236c95e-519c-4873-a67d-fd25982456aa" />
         <icon density="ldpi" src="resources/android/icon/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="resources/android/icon/drawable-mdpi-icon.png" />
         <icon density="hdpi" src="resources/android/icon/drawable-hdpi-icon.png" />
@@ -116,9 +116,9 @@
     <plugin name="cordova-plugin-appcenter-push" spec="^0.1.7" />
     <plugin name="cordova-plugin-appcenter-crashes" spec="^0.1.7" />
     <plugin name="cordova-plugin-appcenter-analytics" spec="^0.1.7" />
-    <plugin name="cordova-plugin-code-push" spec="^1.11.11" />
     <plugin name="cordova-plugin-file" spec="^4.3.3" />
     <plugin name="cordova-plugin-file-transfer" spec="^1.6.3" />
     <plugin name="cordova-plugin-zip" spec="^3.1.0" />
-    <engine name="android" spec="~6.4.0" />
+    <plugin name="cordova-plugin-code-push" spec="^1.11.11" />
+    <engine name="android" spec="6.4.0" />
 </widget>

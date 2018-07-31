@@ -24,7 +24,7 @@
     "@angular/router": "5.2.10",
     "@angular/tsc-wrapped": "4.4.6",
     "@firebase/app": "0.1.10",
-    "@ionic-native/code-push": "^4.10.0",
+    "@ionic-native/code-push": "^4.11.0",
     "@ionic-native/core": "4.7.0",
     "@ionic-native/network": "^4.10.0",
     "@ionic-native/social-sharing": "4.7.0",
