@@ -1,2 +1,0 @@
-# -emotions
-Emotion's Manager
