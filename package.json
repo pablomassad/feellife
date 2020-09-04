@@ -49,7 +49,7 @@
     "cordova-plugin-dialogs": "^2.0.1",
     "cordova-plugin-file": "^4.3.3",
     "cordova-plugin-file-transfer": "^1.6.3",
-    "cordova-plugin-inappbrowser": "^2.0.2",
+    "cordova-plugin-inappbrowser": "^3.1.0",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",
